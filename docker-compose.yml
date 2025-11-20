@@ -5,8 +5,8 @@ services:
     networks:
       private_network:
         ipv4_address: 172.16.0.18
-    ports:
-      - "8080:80"
+    # ports:
+    #   - "8080:80"
 
 networks:
   private_network:
