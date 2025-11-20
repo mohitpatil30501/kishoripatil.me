@@ -3,7 +3,7 @@ services:
     image: nginx:alpine
     container_name: kishori_portfolio
     volumes:
-      - ./html:/usr/share/nginx/html
+      - ./html:/usr/share/nginx/html:ro
     restart: always
     networks:
       private_network:
