@@ -1,6 +1,6 @@
 services:
   app:
-    image: your-image
+    image: nginx:alpine
     container_name: app
     networks:
       private_network:
