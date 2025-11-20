@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: kishori_portfolio
+    volumes:
+      - ./site:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    restart: always
