@@ -1,11 +1,13 @@
-version: "3.8"
-
 services:
-  web:
-    image: nginx:alpine
-    container_name: kishori_portfolio
-    volumes:
-      - ./site:/usr/share/nginx/html
+  app:
+    image: your-image
+    container_name: app
+    networks:
+      private_network:
+        ipv4_address: 172.16.0.18
     ports:
-      - "80:80"
-    restart: always
+      - "8080:80"
+
+networks:
+  private_network:
+    external: true
